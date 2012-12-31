@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+
+if(file_exists('google_translate_php.phar')){
+    unlink('google_translate_php.phar');
+}
+
+$phar = new \Phar('google_translate_php.phar');
